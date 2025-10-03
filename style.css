@@ -1,210 +1,70 @@
-/* Normalización de márgenes y rellenos */
-body, ul, ol, li, p {
-    margin: 0;
-    padding: 0;
-}
-
-
-ul li {
-    list-style: none;
-    list-style-position: inline;
-}
-
-
-ul li a {
-    border: none;
-}
-
-
-/* Eliminando márgenes y rellenos de encabezados */
-h2, h3, h4, h5 {
-    margin: 0;
-    padding: 0;
-}
-
-
-/* Eliminando bordes en imágenes */
-img {
-    border: none;
-}
-
-
-/* Estilo básico para el body */
+/* ---------- Estilos generales ---------- */
 body {
-    font-family: Meiryo, Osaka, Arial, sans-serif, Verdana;
-    color: #111;
-    background: #f6f6f6;
-    text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
 }
 
-
-/* Estilos para los enlaces */
-a {
-    color: #a50f38;
-    text-decoration: none;
+/* ---------- Títulos ---------- */
+h1 {
+  color: #ffcc00;
+  margin-bottom: 20px;
 }
 
-
-a:hover {
-    color: #aa364f;
+h2 {
+  color: #ff9900;
+  margin-bottom: 10px;
 }
 
-
-/* Clear fix para contener flotantes */
-.clear-fix {
-    clear: both;
+/* ---------- Paneles de estado ---------- */
+#estado, #enemigo {
+  border: 2px solid #ffcc00;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px auto;
+  width: 250px;
+  background-color: #333333;
 }
 
-
-/* Contenedor principal */
-#pagewrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 800px;
-    margin: 0 auto;
+/* ---------- Botones ---------- */
+button {
+  background-color: #ff9900;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.1s, background-color 0.2s;
 }
 
-
-/* Estilo del logo */
-#logo {
-    padding: 12px 0 5px 0;
-    margin: 0 0 40px 0;
-    background: linear-gradient(to top, #f5f5f5, #fff);
-    text-align: center;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+button:hover {
+  background-color: #ffcc00;
+  transform: scale(1.05);
 }
 
-
-#logo a {
-    width: 800px;
-    margin: 0 auto;
-    display: inline-block;
-    font-size: 25px;
-    font-weight: normal;
-    text-align: left;
+/* ---------- Botones de batalla ---------- */
+#batalla {
+  margin-top: 15px;
 }
 
-
-/* Estilos de la barra de navegación */
-#navigation_wrapper {
-    flex: 1;
-    font-size: 12px;
-    color: #555;
-}
-
-
-#navigation_wrapper ul {
-    margin-bottom: 10px;
-    background: #fff;
-    box-shadow: 1px 1px 2px #888888;
-    padding: 2px;
-}
-
-
-#navigation_wrapper ul li {
-    padding: 7px;
-    border-bottom: #888 dotted 1px;
-}
-
-
-/* Estilos del título de la navegación */
-#n1, .recom_title_nav {
-    padding: 0 5px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #fff;
-    display: block;
-    background: linear-gradient(to top, #12748d, #000);
-}
-
-
-/* Estilo de los enlaces de la navegación */
-.gnav_in li a {
-    text-decoration: none;
-}
-
-
-.gnav_in li a:hover {
-    color: #333;
-}
-
-
-/* Estilos del área principal */
-#bodyarea {
-    flex: 2;
-    padding: 25px;
-    background: #f9f9f9;
-    border: solid #fff 2px;
-    box-shadow: 1px 1px 3px #999;
-    font-size: 15px;
-    line-height: 150%;
-}
-
-
-/* Estilo de los encabezados dentro del área principal */
-h2, h3, #bodyarea .link_title {
-    color: #fff;
-    font-size: 15px;
-    padding: 7px 5px;
-    margin: 15px 0;
-    font-weight: bold;
-    border-radius: 4px;
-    background: linear-gradient(to bottom, #878787 0%, #000 50%, #474747 51%, #c6c6c6 100%);
-}
-
-
-/* Estilos de los elementos dentro del área principal */
-#bodyarea ul li, #bodyarea p {
-    line-height: 150%;
-}
-
-
-#bodyarea .reference li {
-    line-height: 150%;
-    padding-bottom: 3px;
-}
-
-
-/* Estilo para las imágenes dentro del área principal */
-.index_image {
-    border-top: solid #dddddd 1px;
-    border-bottom: solid #dddddd 1px;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-
-/* Estilos para el pie de página */
-#footerarea {
-    padding: 12px;
-    text-align: center;
-    font-size: 11px;
-    color: #666;
-    background: linear-gradient(to top, #eee, #fff);
-    border-top: solid 1px #ccc;
-}
-
-
-ul#footer {
-    margin: 0 auto;
-    width: 800px;
-    text-align: left;
-    font-size: 12px;
-    padding: 7px 10px;
-    color: #555;
-}
-
-
-ul#footer li {
-    line-height: 200%;
-    font-size: 11px;
-}
-
-
-#footerarea p {
-    letter-spacing: 1px;
-    font-size: 11px;
-    padding: 3px;
-    line-height: 100%;
+/* ---------- Log ---------- */
+#log {
+  border: 2px solid #ff9900;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 500px;
+  height: 100px;
+  overflow-y: auto;
+  background-color: #222222;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  font-size: 14px;
 }
