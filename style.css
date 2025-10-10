@@ -1,70 +1,122 @@
-/* ---------- Estilos generales ---------- */
+body, ul, ol, li, p {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #1a1a1a;
-  color: #f0f0f0;
-  text-align: center;
-  margin: 0;
-  padding: 20px;
+    font-family: Meiryo, Osaka, Arial, sans-serif, Verdana;
+    color: #111;
+    background: #f6f6f6;
+    text-align: center;
 }
 
-/* ---------- Títulos ---------- */
-h1 {
-  color: #ffcc00;
-  margin-bottom: 20px;
+a {
+    color: #a50f38;
+    text-decoration: none;
 }
 
-h2 {
-  color: #ff9900;
-  margin-bottom: 10px;
+a:hover {
+    color: #aa364f;
 }
 
-/* ---------- Paneles de estado ---------- */
-#estado, #enemigo {
-  border: 2px solid #ffcc00;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 10px auto;
-  width: 250px;
-  background-color: #333333;
+#pagewrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
 }
 
-/* ---------- Botones ---------- */
-button {
-  background-color: #ff9900;
-  color: #1a1a1a;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: transform 0.1s, background-color 0.2s;
+#logo {
+    padding: 12px 0 5px 0;
+    margin: 0 0 40px 0;
+    background: linear-gradient(to top, #f5f5f5, #fff);
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
-  background-color: #ffcc00;
-  transform: scale(1.05);
+#logo a {
+    width: 800px;
+    margin: 0 auto;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: left;
 }
 
-/* ---------- Botones de batalla ---------- */
-#batalla {
-  margin-top: 15px;
+#navigation_wrapper {
+    list-style: none;
+    flex: 1;
+    font-size: 12px;
+    color: #555;
 }
 
-/* ---------- Log ---------- */
-#log {
-  border: 2px solid #ff9900;
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 20px;
-  width: 500px;
-  height: 100px;
-  overflow-y: auto;
-  background-color: #222222;
-  color: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  font-size: 14px;
+#navigation_wrapper ul {
+    margin-bottom: 10px;
+    background: #fff;
+    box-shadow: 1px 1px 2px #888888;
+    padding: 2px;
 }
+
+#navigation_wrapper ul li {
+    padding: 7px;
+    border-bottom: #888 dotted 1px;
+}
+
+#n1, .recom_title_nav {
+    padding: 0 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    background: linear-gradient(to top, #12748d, #000);
+}
+
+.nav_principal li a {
+    text-decoration: none;
+}
+
+.nav_principal li a:hover {
+    color: #333;
+}
+
+
+#bodyarea {
+    flex: 2;
+    padding: 25px;
+    background: #f9f9f9;
+    border: solid #fff 2px;
+    box-shadow: 1px 1px 3px #999;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+h2, h3 {
+    color: #fff;
+    font-size: 15px;
+    padding: 7px 5px;
+    margin: 15px 0;
+    font-weight: bold;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #878787 0%, #000 50%, #474747 51%, #c6c6c6 100%);
+}
+
+#bodyarea ul li, #bodyarea p {
+    line-height: 150%;
+}
+
+.imagen_principal {
+    border-top: solid #dddddd 1px;
+    border-bottom: solid #dddddd 1px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.imagen_contenido {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
